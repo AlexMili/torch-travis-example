@@ -17,7 +17,7 @@ before_install:
   - source $(pwd)/deps/torch/install/bin/torch-activate
 
 install:
-  - luarocks make torch-travis-example-0.rockspec CFLAGS="-O2 -fPIC -fprofile-arcs" LIBFLAG="-shared"
+  - luarocks make torch-travis-example-scm-0.rockspec CFLAGS="-O2 -fPIC -fprofile-arcs" LIBFLAG="-shared"
 
 before_script:
   - source $(pwd)/deps/torch/install/bin/torch-activate
