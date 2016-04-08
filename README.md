@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AlexMili/torch-travis-example.svg?branch=master)](https://travis-ci.org/AlexMili/torch-travis-example)
+
 # Torch and Travis-ci example
 This example is inspired from [@moteu's](https://github.com/moteus/lua-travis-example) ```lua-travis-example``` repository which show how to use travis with Lua and [@nvidia's](https://github.com/NVIDIA/DIGITS/tree/master/scripts/travis) ```DIGITS``` repository for torch installation scripts.
 
