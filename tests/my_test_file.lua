@@ -1,4 +1,4 @@
-require "../my_module"
+require "my_module"
 
 local testsuite = torch.TestSuite()
 local tester = torch.Tester()

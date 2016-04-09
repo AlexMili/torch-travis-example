@@ -19,6 +19,6 @@ package = "torch-travis-example"
  build = {
   type = 'builtin',
   modules = {
-      ["Dataframe"] = 'Dataframe.lua',
+      ["my_module"] = 'my_module.lua',
   }
  }

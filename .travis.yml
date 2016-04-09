@@ -23,8 +23,7 @@ before_script:
   - source $(pwd)/deps/torch/install/bin/torch-activate
 
 script:
-  - cd tests
-  - lua my_test_file.lua
+  - lua tests/my_test_file.lua
 
 after_success:
   - echo "Tests passed"
