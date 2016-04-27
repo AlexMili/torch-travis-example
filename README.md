@@ -1,6 +1,4 @@
 [![Build Status](https://travis-ci.org/AlexMili/torch-travis-example.svg?branch=master)](https://travis-ci.org/AlexMili/torch-travis-example)
 
 # Torch and Travis-ci example
-This example is inspired from [@moteu's](https://github.com/moteus/lua-travis-example) ```lua-travis-example``` repository which show how to use travis with Lua and [@nvidia's](https://github.com/NVIDIA/DIGITS/tree/master/scripts/travis) ```DIGITS``` repository for torch installation scripts.
-
-For more information about Lua and travis go check [@moteu's](https://github.com/moteus/lua-travis-example) repository.
+This example use the python script [hererocks](https://github.com/mpeterv/hererocks) to install Lua environment and Luarocks.
