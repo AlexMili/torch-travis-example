@@ -13,7 +13,7 @@ package = "torch-travis-example"
     maintainer = "Alex Mili"
  }
  dependencies = {
-    "lua ~> 5.1",
+    "lua >= 5.1",
     "torch >= 7.0"
  }
  build = {
