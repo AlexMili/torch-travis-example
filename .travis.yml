@@ -28,6 +28,7 @@ install:
 script:
   - luarocks install luacov
   - lua -lluacov tests/my_test_file.lua
+  - luacov -c .luacov
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
