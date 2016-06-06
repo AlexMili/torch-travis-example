@@ -1,5 +1,5 @@
 return {
 	modules = {
-      ["my_module"] = 'my_module.lua'
+		["my_module"] = 'my_module.lua'
 	}
 }
