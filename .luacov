@@ -1,0 +1,5 @@
+return {
+	modules = {
+      ["my_module"] = 'my_module.lua'
+	}
+}

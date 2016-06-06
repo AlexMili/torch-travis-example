@@ -23,13 +23,14 @@ before_install:
 
 install:
   - luarocks --from=$TORCH_SERVER install torch
-  - luarocks make torch-travis-example-scm-0.rockspec CFLAGS="-O2 -fPIC -fprofile-arcs" LIBFLAG="-shared"
+  - luarocks make torch-travis-example-scm-0.rockspec CFLAGS="-O2 -fPIC -fprofile-arcs -ftest-coverage" LIBFLAG="-shared --coverage"
 
 script:
-  - lua tests/my_test_file.lua
+  - luarocks install luacov
+  - lua -lluacov tests/my_test_file.lua
 
 after_success:
-  - echo "Tests passed"
+  - bash <(curl -s https://codecov.io/bash)
 
 notifications:
   email:
