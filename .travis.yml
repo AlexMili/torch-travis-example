@@ -39,7 +39,7 @@ install:
 
 script:
   - luarocks install luacov
-  - lua -lluacov tests/my_test_file.lua
+  - th -lluacov tests/my_test_file.lua
   - luacov -c .luacov
 
 after_success:
