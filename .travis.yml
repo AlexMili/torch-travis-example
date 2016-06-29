@@ -20,7 +20,7 @@ env:
     - LUA="LUAJIT21"
 
 before_install:
-  - if [[ ! -f torch ]]; then git clone https://github.com/torch/distro.git torch --recursive ; fi
+  - if [[ ! -d torch ]]; then git clone https://github.com/torch/distro.git torch --recursive ; fi
   - cd torch
   - git pull
   - git submodule update
