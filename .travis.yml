@@ -25,7 +25,6 @@ before_install:
   - git pull
   - git submodule update
   - git submodule foreach git pull origin master
-  - git add extra pkg exe
   - cd ..
   - cp -rf torch torch_$LUA
   - cd torch_$LUA
