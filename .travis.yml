@@ -21,10 +21,12 @@ env:
 
 before_install:
   - if [[ ! -f torch ]]; then git clone https://github.com/torch/distro.git torch --recursive ; fi
+  - cd torch
+  - ./update.sh
+  - cd ..
   - cp -rf torch torch_$LUA
   - cd torch_$LUA
-  - ./install-deps
-  - TORCH_LUA_VERSION=$LUA ./install.sh
+  - TORCH_LUA_VERSION=$LUA ./install.sh -b
 
 install:
   - luarocks --from=$TORCH_SERVER install torch
