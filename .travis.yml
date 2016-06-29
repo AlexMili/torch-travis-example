@@ -32,6 +32,7 @@ before_install:
   - TORCH_LUA_VERSION=$LUA ./install.sh -b
 
 install:
+  - . torch_$LUA/install/bin/torch-activate
   - luarocks --from=$TORCH_SERVER install torch
   - luarocks make torch-travis-example-scm-0.rockspec CFLAGS="-O2 -fPIC -fprofile-arcs -ftest-coverage" LIBFLAG="-shared --coverage"
 
