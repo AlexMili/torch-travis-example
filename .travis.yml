@@ -20,11 +20,9 @@ env:
     - LUA="LUAJIT21"
 
 before_install:
-  - if [[ -f torch ]]; then git clone https://github.com/torch/distro.git torch --recursive ; fi
+  - if [[ ! -f torch ]]; then git clone https://github.com/torch/distro.git torch --recursive ; fi
   - cp -rf torch torch_$LUA
   - cd torch_$LUA
-  - ls -l
-  - pwd
   - ./install-deps
   - TORCH_LUA_VERSION=$LUA ./install.sh
 
